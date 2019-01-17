@@ -14,4 +14,34 @@ public class Main {
 
 	}
 
+	private static class Triangle {
+		private float a;
+		private float b;
+		private float c;
+
+
+		Triangle(float d, float e, float f) {
+			a = d;
+			b = e;
+			c = f;
+
+		}
+
+		Triangle(float sideLength){
+			a = sideLength;
+			b = sideLength;
+			c = sideLength;
+		}
+
+		public float calculatePerimeter() {
+
+			float sum = a + b + c;
+			return sum;
+
+		}
+
+	}
+
 }
+
+
